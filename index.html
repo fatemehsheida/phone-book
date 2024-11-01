@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div id="app" class="bg-white w-[1440px] z-0">
+    <div id="app" class="bg-white w-[1440px] h-96 z-0 relative">
       <div class="flex justify-between items-center">
       <div class="flex justify-center items-center">
         <img class="logo w-15" src="./image/user.svg" alt="user"></img>
@@ -16,12 +16,24 @@
       </div>
       <div class="search relative">
         <img class="w-5 absolute top-1 left-2 z-20	" src="./image/search.svg" alt="search">
-        <input type="text" name="search" id="search" class="search z-10 w-25 h-8 bg-slate-200 rounded-lg text-center" placeholder="search">
+        <input type="text" name="search" id="search" class="search z-10 w-50 h-8 bg-slate-200 rounded-lg text-center" placeholder="search">
       </div>
       <div class="addContact relative">
         <img src="./image/plus.svg" class="w-10 absolute bottom-px left-2 z-20">
-        <button class="createContact w-40 rounded-lg text-xs text-right	">Create contact</button>
+        <button class="createContact w-40 shadow-md rounded-lg rounded-full bg-white border-slate-200 border-[2px] text-black text-xs text-right	">Create contact</button>
       </div>
+      </div>
+      <div class=" flex justify-between text-black pb-3">
+        <h5 class="">Name</h5>
+        <h5 class="">Phone Number</h5>
+        <h5 class=""></h5>
+      </div>
+      <hr>
+      <p class="text-black text-xs items-end flex pt-3">CONTACTS(23)</p>
+      <div class="section">
+        <section>
+          <span id="contacts"></span>
+        </section>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
