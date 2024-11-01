@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div class="container w-[1440px]"></div>
+    <div id="app" class="bg-white w-[1440px] z-0">
+      <div class="flex justify-between items-center">
+      <div class="flex justify-center items-center">
+        <img class="logo w-15" src="./image/user.svg" alt="user"></img>
+        <h5 class="text-slate-950	">Phonebook</h5>
+      </div>
+      <div class="search relative">
+        <img class="w-5 absolute top-1 left-2 z-20	" src="./image/search.svg" alt="search">
+        <input type="text" name="search" id="search" class="search z-10 w-25 h-8 bg-slate-200 rounded-lg text-center" placeholder="search">
+      </div>
+      <div class="addContact relative">
+        <img src="./image/plus.svg" class="w-10 absolute bottom-px left-2 z-20">
+        <button class="createContact w-40 rounded-lg text-xs text-right	">Create contact</button>
+      </div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
