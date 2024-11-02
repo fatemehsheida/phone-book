@@ -8,32 +8,272 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div id="app" class="bg-white w-[1440px] h-96 z-0 relative">
+    <div id="app" class="bg-white w-[1440px] h-96 z-0 relative flex flex-col justify-center">
       <div class="flex justify-between items-center">
       <div class="flex justify-center items-center">
-        <img class="logo w-15" src="./image/user.svg" alt="user"></img>
+        <img class="logo w-9 mr-1" src="./image/user.svg" alt="user"></img>
         <h5 class="text-slate-950	">Phonebook</h5>
       </div>
       <div class="search relative">
-        <img class="w-5 absolute top-1 left-2 z-20	" src="./image/search.svg" alt="search">
-        <input type="text" name="search" id="search" class="search z-10 w-50 h-8 bg-slate-200 rounded-lg text-center" placeholder="search">
+        <img class="w-5 absolute top-1 left-40 z-20	" src="./image/search.svg" alt="search">
+        <input type="text" name="search" id="search" class="search z-10 w-50 h-8  pl-12 pr-12  ml-36 mr-36 bg-slate-200 rounded-lg text-center" placeholder="search">
       </div>
       <div class="addContact relative">
         <img src="./image/plus.svg" class="w-10 absolute bottom-px left-2 z-20">
         <button class="createContact w-40 shadow-md rounded-lg rounded-full bg-white border-slate-200 border-[2px] text-black text-xs text-right	">Create contact</button>
       </div>
       </div>
-      <div class=" flex justify-between text-black pb-3">
+      <div class=" flex justify-between text-black pb-3 w-[820px]">
         <h5 class="">Name</h5>
         <h5 class="">Phone Number</h5>
         <h5 class=""></h5>
       </div>
       <hr>
       <p class="text-black text-xs items-end flex pt-3">CONTACTS(23)</p>
-      <div class="section">
-        <section>
-          <span id="contacts"></span>
-        </section>
+      <div class="overflow-y-scroll">
+        <div class="flex items-center justify-between w-[480px] pt-2 pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-slate-200 text-black w-10 h-10 flex justify-center items-center text-xl  mr-2">J</p>
+              <p class=" text-black">Jessie Wilderman</p>
+            </div>
+          </div>
+          <p class="text-black">020 139 8323</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#309374cd] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">M</p>
+              <p class=" text-black">Mamie Stehr</p>
+            </div>
+          </div>
+          <p class="text-black">021 295 9601</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#431b59c6] text-white w-10 h-10 flex justify-center items-center text-xl mr-2">D</p>
+              <p class=" text-black">Daneille Walker</p>
+            </div>
+          </div>
+          <p class="text-black">029 585 7020</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#56aa56] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#fa62ae] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">F</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#ce8973] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">T</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#d8b475] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">H</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#90e3ee] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">I</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#f61836] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">B</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#abe744] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">R</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#6537bb] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">O</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#198c68] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">Q</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#9abb37] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">S</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#bb8d37] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#bb3791] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#bb8437] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#79465f] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#6537bb] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#728475] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#8ab96e] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#6537bb] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#ac5656] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+        
+        <div class="flex items-center justify-between w-[480px] pb-2">
+          <div>
+            <div class="flex items-center justify-stretch w-44">
+              <p class="rounded-full bg-[#b1c870] text-black w-10 h-10 flex justify-center items-center text-xl mr-2">L</p>
+              <p class=" text-black">Leon Hayes</p>
+            </div>
+          </div>
+          <p class="text-black">025 831 7366</p>
+        </div>
+
+
       </div>
     </div>
     <script type="module" src="/main.js"></script>
