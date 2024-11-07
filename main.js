@@ -2,15 +2,15 @@ import "./style.css";
 
 const profileUser = document.getElementsByClassName("imgUser");
 const profileIcon = document.getElementsByClassName("imgIconUser");
-const Name = document.getElementsByClassName("nameUser");
-const phoneNumber = document.getElementsByClassName("phoneNumberUser");
-const search = document.getElementsById("search");
+const Name = document.getElementsByClassName("nameUser").value;
+const phoneNumber = document.getElementsByClassName("phoneNumberUser").value;
+const search = document.getElementsById("search").value;
 const addContact = document.getElementsByClassName("addContact");
 const deleteUser = document.getElementsByClassName("deleteBtn");
 const editUser = document.getElementsByClassName("editBtn");
 const save = document.getElementsByClassName("createBtn");
-const createPhoneNumberInput = document.getElementsById("phoneNumberInput");
-const createNameInput = document.getElementsById("nameInput");
+const createPhoneNumberInput = document.getElementsById("phoneNumberInput").value;
+const createNameInput = document.getElementsById("nameInput").value;
 const back = document.getElementsById("backIcon");
 const ContactList = document.getElementsById("ContactList");
 
